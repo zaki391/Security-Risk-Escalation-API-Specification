@@ -1,0 +1,24 @@
+### Create a new risk assessment
+POST http://localhost:5000/api/risk-assessments
+Content-Type: application/json
+
+{
+    "title": "New Risk",
+    "description": "Description of the risk",
+    "riskLevel": "High",
+    "dateAssessed": "2024-11-30",
+    "assessor": "John Doe"
+}
+
+### List all risk assessments
+GET http://localhost:5000/api/risk-assessments
+
+### Retrieve a specific risk assessment
+GET http://localhost:5000/api/risk-assessments/1
+
+### Update an existing risk assessment
+PUT http://localhost:5000/api/risk-assessments/1
+Content-Type: application/json
+
+{
+    "title": "Updated Risk",

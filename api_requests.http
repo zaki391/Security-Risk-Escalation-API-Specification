@@ -1,0 +1,32 @@
+### Create a new risk assessment
+POST /api/risk-assessments
+Content-Type: application/json
+
+{
+    "title": "New Risk",
+    "description": "Description of the risk",
+    "riskLevel": "High",
+    "dateAssessed": "2024-11-30",
+    "assessor": "John Doe"
+}
+
+### List all risk assessments
+GET /api/risk-assessments
+
+### Retrieve a specific risk assessment
+GET /api/risk-assessments/{id}
+
+### Update an existing risk assessment
+PUT /api/risk-assessments/{id}
+Content-Type: application/json
+
+{
+    "title": "Updated Risk",
+    "description": "Updated description of the risk",
+    "riskLevel": "Medium",
+    "dateAssessed": "2024-12-01",
+    "assessor": "Jane Doe"
+}
+
+### Delete a risk assessment
+DELETE /api/risk-assessments/{id}
